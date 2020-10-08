@@ -1,2 +1,2 @@
-modules.export = {
+module.exports = {
 }
