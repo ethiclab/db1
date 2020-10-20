@@ -2,9 +2,12 @@ module.exports = {
   register: (url, router) => {
     router.get('/ignored', async (q, a) => {
       
+      const out = require('child_process').execSync('ls').toString()
+      
       a.send({
         result: true,
-        message: "Hello world from github."
+        message: "Hello world from github.",
+        ls: out
       })
     })
   }
