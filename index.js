@@ -3,7 +3,8 @@ module.exports = {
     router.get('/ignored', async (q, a) => {
       
       a.send({
-        result: true
+        result: true,
+        message: "Hello world from github."
       })
     })
   }
